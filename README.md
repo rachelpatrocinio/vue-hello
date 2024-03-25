@@ -138,6 +138,28 @@ Se l'attributo coincide con il nome della proprietà possiamo anche scrivere in 
 
     <div v-bind:class="class"></div> (Versione estesa)
     <div :class> </div> (Versione Compatta)
+
+Possiamo anche utilizzare il v-bind senza argomento, in questo modo:
+
+FILE HTML:
+
+    <div v-bind="propertyName"></div>
+
+FILE JS:
+
+    createApp({
+        data(){
+            propertName: {
+                id: 'myId'
+                class: 'myClass'
+            }
+        }
+    })
+
+Se andiamo a controlla su ispeziona, vedremo che il div sarà scritto in questo modo:
+
+    <div v-bind="propertyName" id="myId" class="myClass"></div>
+        
 ---
 ### V-ON 
 V-on viene utilizzato per ascoltare gli eventi. E, poi invoca una funzione.
