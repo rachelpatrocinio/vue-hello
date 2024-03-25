@@ -25,6 +25,21 @@
         <p>Stampo immediatamente i numeri che scrive l'utente <strong>{{ inputNumberValue }}</strong></p>
 
         <hr>
+
+        <select v-model="destination">
+            <option value="0">Roma</option>
+            <option value="1">Milano</option>
+            <option value="2">Firenze</option>
+        </select>
+
+        <select v-model="discount">
+            <option value="0">Standard</option>
+            <option value="1">Minorenne</option>
+            <option value="2">Over 65</option>
+        </select>
+
+        <button @click="calculatePrice">Calcola prezzo</button>
+        <p>Il prezzo finale è di <strong> {{ finalPrice }} €</strong></p>    
     </div>
 
     <script src="./js/app.js"></script>
