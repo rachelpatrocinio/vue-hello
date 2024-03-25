@@ -150,3 +150,40 @@ Shorthand
 
     <button @click="functionName"> CLICK ME </button>
 
+
+## DOVE VENGONO SCRITTE LE FUNCTION IN VUE?
+
+Le funzioni in Vue sono elencate in un'altra proprieta dell'oggetto parametro di createApp.
+Questa proprità si chiama METHODS.
+
+    createApp({
+        data(){
+            name: 'Rachel',
+            surname: 'Patrocinio'
+        },
+        methods: {
+            functionName(){}
+        }
+    })
+
+Per poter richiamare una proprietà presente nella funzione data(), bisogna usare la keyword THIS
+
+    createApp({
+        data(){
+            name: 'Rachel',
+            surname: 'Patrocinio'
+        },
+        methods: {
+            functionName(){
+                theName = this.name; 
+                theSurname = this.surname;
+                console.log(theName, theSurname); // Rachel Patrocinio
+            }
+        }
+    })
+
+### Come invochiamo le funzioni?
+
+    <div @click="functionName"></div>
+
+    <div> Il mio nome è {{ functionName() }}
