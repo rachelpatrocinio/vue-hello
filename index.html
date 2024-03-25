@@ -39,7 +39,12 @@
         </select>
 
         <button @click="calculatePrice">Calcola prezzo</button>
-        <p>Il prezzo finale è di <strong> {{ finalPrice }} €</strong></p>    
+        <p>Il prezzo finale è di <strong> {{ finalPrice }} €</strong></p>   
+        
+        <hr>
+
+        <!-- V-BIND WITHOUT ARGUMENT -->
+        <div v-bind="propertyNames">Qui ho inserito un id e una class con il v-bind senza argomento</div>
     </div>
     
     <script src="./js/app.js"></script>

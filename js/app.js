@@ -11,7 +11,11 @@ createApp({
             inputNumberValue: '',
             destination: '',
             discount: '',
-            finalPrice: ''
+            finalPrice: '',
+            propertyNames:{
+                id: 'myId',
+                class: 'myClass'
+            }
         }
     },
     methods: {
