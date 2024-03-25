@@ -11,7 +11,7 @@ Vue viene utilizzato per le "single page application":
 
 
 #### Vue CDN - with Script Tag: 
-    \<script src="https://unpkg.com/vue@3/dist/vue.global.js"\></script\>"
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"\></script\>"
 
 ! Importante !
 
