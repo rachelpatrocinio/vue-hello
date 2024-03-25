@@ -7,7 +7,8 @@ createApp({
             data: '25/03/2024',
             //inputValue: 'ciao', // qui ho inserito il value nell'input
             inputValue: '',
-            printedValue: ''
+            printedValue: '',
+            inputNumberValue: ''
         }
     },
     methods: {

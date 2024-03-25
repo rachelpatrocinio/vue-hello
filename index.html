@@ -12,10 +12,19 @@
         <h1>{{ titolo }}</h1>
         <p> La data di oggi è {{ data }}</p>
 
-        <input type="text" v-model="inputValue">
+        <hr>
+
+        <input type="text" v-model="inputValue" placeholder="Srivi...">
         <button @click="printValue">CLICK ME</button>
 
         <p>La stringa che hai scritto nell'input è: <strong>{{ printedValue }}</strong></p>
+
+        <hr>
+
+        <input type="number" placeholder="Scrivi dei numeri" v-model="inputNumberValue">
+        <p>Stampo immediatamente i numeri che scrive l'utente <strong>{{ inputNumberValue }}</strong></p>
+
+        <hr>
     </div>
 
     <script src="./js/app.js"></script>
