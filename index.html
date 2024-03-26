@@ -67,6 +67,11 @@
                 {{ i }} - {{ name }}
             </li>
         </ul>
+
+        <!-- PRINT MULTIPLE DIV WITH v-for + TENERARY OPERATOR -->
+        <div v-for="n in 10">
+            {{ n }} {{ n % 2 === 0 ? 'even' : 'odd'}}
+        </div>
     </div>
     
     <script src="./js/app.js"></script>
