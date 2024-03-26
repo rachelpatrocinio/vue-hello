@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<style>
+    .bg-teal{
+        background-color: teal;
+    }
+</style>
 <body>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
@@ -52,6 +58,13 @@
         <ul>
             <li v-for="name in names">
                 {{ name }}
+            </li>
+        </ul>
+
+        <!-- ADDED INDEX + TENERARY OPERATOR -->
+        <ul>
+            <li v-for="(name, i) in names" :class="i === 1 ? 'bg-teal' : '' ">
+                {{ i }} - {{ name }}
             </li>
         </ul>
     </div>
