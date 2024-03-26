@@ -16,7 +16,8 @@ createApp({
             propertyNames:{
                 id: 'myId',
                 class: 'myClass'
-            }
+            },
+            names: ['Rachel', 'Anne', 'Patrocinio']
         }
     },
     methods: {

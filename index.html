@@ -47,6 +47,13 @@
         <div v-bind="propertyNames">Qui ho inserito un id e una class con il v-bind senza argomento</div>
 
         <img :src="srcPath">
+
+        <!-- PRINT ON SCREEN WITH v-for CYCLING AN ARRAY  -->
+        <ul>
+            <li v-for="name in names">
+                {{ name }}
+            </li>
+        </ul>
     </div>
     
     <script src="./js/app.js"></script>
