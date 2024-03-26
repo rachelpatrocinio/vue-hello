@@ -12,6 +12,7 @@ createApp({
             destination: '',
             discount: '',
             finalPrice: '',
+            srcPath: 'https://thumbs.dreamstime.com/b/superficie-praticante-il-surfing-dell-acqua-onda-di-oceano-mare-124362369.jpg',
             propertyNames:{
                 id: 'myId',
                 class: 'myClass'
