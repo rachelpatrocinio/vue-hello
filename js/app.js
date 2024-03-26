@@ -54,6 +54,13 @@ createApp({
 
             this.destination = '';
             this.discount = '';
+        },
+        isMultipleOf(n,divider){
+            if ( n % divider === 0){
+                true;
+            } else{
+                false;
+            }
         }
     }
 }).mount('#app');

@@ -7,8 +7,32 @@
 </head>
 
 <style>
+
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
     .bg-teal{
         background-color: teal;
+    }
+
+    .d-flex{
+        display: flex;
+    }
+
+    .flex-wrap{
+        flex-wrap: wrap;
+    }
+
+    .col{
+        width: calc(100% / 10);
+        aspect-ratio: 1/1;
+        border: 1px solid black;
+    }
+
+    .text-center{
+        text-align: center;
     }
 </style>
 <body>
@@ -68,10 +92,20 @@
             </li>
         </ul>
 
-        <!-- PRINT MULTIPLE DIV WITH v-for + TENERARY OPERATOR -->
+        <!-- PRINT MULTIPLE DIV WITH v-for + TENERARY OPERATOR  -->
         <div v-for="n in 10">
             {{ n }} {{ n % 2 === 0 ? 'even' : 'odd'}}
         </div>
+
+        <!-- PRINT MULTIPLE DIV WITH v-for + v-if / v-else-if  -->
+        <section class="d-flex flex-wrap">
+            <div v-for="n in 100" class="col text-center">
+                <span v-if="n % 15 === 0">FizzBuzz</span>
+                <span v-else-if="n % 5 === 0">Fizz</span>
+                <span v-else-if="n % 3 === 0">Buzz</span>
+                <span v-else> {{ n }}</span>
+            </div>
+        </section>
     </div>
     
     <script src="./js/app.js"></script>
