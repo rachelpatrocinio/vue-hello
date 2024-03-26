@@ -17,7 +17,21 @@ createApp({
                 id: 'myId',
                 class: 'myClass'
             },
-            names: ['Rachel', 'Anne', 'Patrocinio']
+            names: ['Rachel', 'Anne', 'Patrocinio'],
+            brands: [
+                {
+                    brand: 'Nike',
+                    product: 'Shoe'
+                },
+                {
+                    brand: 'Apple',
+                    product: 'Cellphone'
+                },
+                {
+                    brand: 'Samsung',
+                    product: 'TV'
+                },
+            ]
         }
     },
     methods: {
